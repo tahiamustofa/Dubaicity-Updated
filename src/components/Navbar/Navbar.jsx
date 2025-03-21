@@ -7,15 +7,19 @@ import Subheader from "../Subheader/Subheader";
 
 const TABS = [
     { id: 1, title: "Service", Component: () => <Subheader /> },
-    { id: 2, title: "Business Setup", Component: () => (
-        <div className="px-8 py-3">
+    {
+        id: 2,
+        title: <NavLink to="/business">Business Setup</NavLink>,
+        Component: () => (
+          <div className="px-8 py-3">
             <h3 className="mb-2 text-sm font-medium">Tour Packages</h3>
             <a href="#" className="block text-sm text-black">Adventure Trips</a>
             <a href="#" className="block text-sm text-black">Honeymoon Packages</a>
             <a href="#" className="block text-sm text-black">Cultural Tours</a>
-        </div>
-    )},
-    { id: 3, title: "Airlines Ticket", Component: () => (
+          </div>
+        ),
+      },
+    { id: 3, title:  <NavLink to="/uae">Airlines Ticket</NavLink>, Component: () => (
         <div className="px-8 py-3">
             <h3 className="mb-2 text-sm font-medium">Company Info</h3>
             <a href="#" className="block text-sm text-black">Our Story</a>

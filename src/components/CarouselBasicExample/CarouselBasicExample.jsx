@@ -1,5 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight, Search } from "lucide-react";
+import slide from "../../assets/img/Rectangle 6.png"
+import slide2 from "../../assets/img/slide 2.png"
+import slide3 from "../../assets/img/slide3.png"
+import slide4 from "../../assets/img/slide4.png"
 
 const CarouselBasicExample = () => {
     const sliderRef = useRef(null);
@@ -7,11 +11,11 @@ const CarouselBasicExample = () => {
     const slides = [
         {
             title: "Discover Your Dream Destinations",
-            bgImage: "url('https://ambitioncity20.web.app/assets/hero1-9Oyq8O8a.png')",
+            bgImage: slide ,
         },
         {
             title: "Discover Your Dream Destinations",
-            bgImage: "url('https://ambitioncity20.web.app/assets/hero2-DemESpx_.png')",
+            bgImage: slide2,
 
             content: (
 
@@ -40,12 +44,12 @@ const CarouselBasicExample = () => {
         },
         {
             title: "Simplify Your Travel Plans",
-            bgImage: "url('https://ambitioncity20.web.app/assets/hero3-DA8Jd1cb.png')",
+            bgImage:slide3 ,
             text: "Your Passport to Adventure: AMBITION. Explore the world with ease and expertise. Book now",
         },
         {
             title: "Simplify Your Travel Plans",
-            bgImage: "url('https://ambitioncity20.web.app/assets/hero4-CmWCgHkG.png')",
+            bgImage: slide4,
             text: "Your Passport to Adventure: AMBITION. Explore the world with ease and expertise. Book now",
         },
     ];
@@ -88,10 +92,11 @@ const CarouselBasicExample = () => {
                         key={index}
                         className="text-white flex-none w-full flex flex-col items-center justify-center snap-center rounded-4xl z-30"
                         style={{
-                            backgroundImage: slide.bgImage,
+                            backgroundImage: `url(${slide.bgImage})`,
                             backgroundSize: "cover",
                             backgroundPosition: "center",
-                        }}
+                          }}
+                          
                     >
                         <div className="flex flex-col items-center justify-center gap-3 w-full">
                             <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold max-w-md text-center px-4">

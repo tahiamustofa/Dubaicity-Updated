@@ -3,7 +3,6 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import obj from "../../assets/img/Objects (2).png";
 import obj1 from "../../assets/img/Objects (3).png";
 import client from "../../assets/img/image 763.png";
-
 import vector from "../../assets/img/Vector (2).png";
 
 const TestimonialSlider = () => {
